@@ -1,6 +1,6 @@
 import ContactCard from "../components/contact-card";
 import { Navigation } from "../components/nav";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Importing icons from react-icons
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const contactMethods = [
   {
