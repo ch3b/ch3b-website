@@ -12,10 +12,10 @@
     "@primer/octicons": "^19.11.0",
     "@primer/octicons-react": "^19.11.0",
     "@primer/react": "^36.26.0",
+    "@react-icons/all-files": "^4.1.0",
     "next": "14.2.5",
     "octicons": "^8.4.2",
-    "react": "^18",
-    "react-icons/fi": "^1.0"
+    "react": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
