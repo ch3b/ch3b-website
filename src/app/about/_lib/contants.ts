@@ -1,4 +1,7 @@
-export const summary = "Blah blah hello hello";
+export const summary = "A hard-working and driven Software Engineer with a passion for technology, as well" 
+    + " as excellent teamwork and technical skills. Graduated from Lancaster University with a First Class degree"
+    + " in Computer Science. Specialising in backend development, with over four years of experience in Java, Kotlin,"
+    + " and frameworks such as Spring and Quarkus.";
 
 const awazeDesc: string[] = [
   "Developed a brand-agnostic search engine solution for high-traffic websites.",
