@@ -14,7 +14,7 @@ export default function Contact() {
             <ContactCard
               key={index}
               title={contact.title}
-              icon={contact.icon}
+              contactMethod={contact.contactMethod}
               username={contact.username}
               link={contact.link}
             />
