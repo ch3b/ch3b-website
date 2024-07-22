@@ -5,9 +5,9 @@ import { projects } from "./_lib/constants";
 export default function Projects() {
   return (
     <main>
-      <Navigation /> 
+      <Navigation />
 
-      <div className="p-4 flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
+      <div className="p-4 flex flex-col items-center justify-center w-screen pt-20">
         <h1 className="text-3xl font-bold mb-6">My Projects</h1>
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, index) => (

@@ -11,7 +11,7 @@ export default function AboutMe() {
     <main>
       <Navigation />
 
-      <div className="p-4 mt-[100px] flex flex-col justify-center w-screen">
+      <div className="p-4 pt-20 flex flex-col justify-center w-screen">
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Summary</h2>
           <p className="text-lg text-gray-300">
