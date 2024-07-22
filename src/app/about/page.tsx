@@ -1,9 +1,8 @@
 import { Navigation } from "../components/nav";
 
 import React from 'react';
-import { SummarySection } from "./summary";
-import { WorkExperienceCard } from "./work-experience-card";
-import { workExperiences } from "./work-experience-info";
+import { WorkExperienceCard } from "./_components/work-experience-card";
+import { summary, workExperiences } from "./_lib/contants";
 
 const skills = ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'];
 
@@ -13,7 +12,12 @@ export default function AboutMe() {
       <Navigation />
 
       <div className="p-4 mt-[100px] flex flex-col justify-center w-screen">
-        <SummarySection />
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-4">Summary</h2>
+          <p className="text-lg text-gray-300">
+              {summary}
+          </p>
+        </section>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
@@ -42,7 +46,7 @@ export default function AboutMe() {
             ))}
           </div>
         </section>
-        
+
       </div>
     </main>
   );

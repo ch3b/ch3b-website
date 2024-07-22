@@ -1,27 +1,6 @@
-import ContactCard from "../components/contact-card";
+import ContactCard from "./_components/contact-card";
 import { Navigation } from "../components/nav";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-
-const contactMethods = [
-  {
-    title: 'GitHub',
-    icon: <FaGithub size={24} />,
-    username: 'ch3b',
-    link: 'https://github.com/ch3b'
-  },
-  {
-    title: 'LinkedIn',
-    icon: <FaLinkedin size={24} />,
-    username: 'cameron-hutton-brown',
-    link: 'https://www.linkedin.com/in/cameron-hutton-brown/'
-  },
-  {
-    title: 'Email',
-    icon: <FaEnvelope size={24} />,
-    username: 'c.s.huttonbrown@gmail.com',
-    link: 'mailto:c.s.huttonbrown@gmail.com'
-  }
-];
+import { contactMethods } from "./_lib/constants";
 
 export default function Contact() {
   return (
