@@ -1,8 +1,7 @@
 import { Navigation } from "../components/nav";
-import { WorkExperienceCard } from "./_components/work-experience-card";
 
 import React from "react";
-
+import { WorkExperienceCard } from "./_components/work-experience-card";
 import { summary, workExperiences } from "./_lib/contants";
 
 const skills = [
