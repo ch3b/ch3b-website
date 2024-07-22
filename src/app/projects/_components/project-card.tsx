@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   title: string;
@@ -8,7 +8,12 @@ interface ProjectCardProps {
   repoLink: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techs, repoLink }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  techs,
+  repoLink,
+}) => {
   return (
     <a
       href={repoLink}

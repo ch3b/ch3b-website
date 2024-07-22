@@ -1,6 +1,6 @@
-import React from 'react';
-import { ContactMethod } from '../_lib/contact-method.enum';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import React from "react";
+import { ContactMethod } from "../_lib/contact-method.enum";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 interface ContactCardProps {
   title: string;
@@ -15,7 +15,12 @@ const contactIcons = {
   [ContactMethod.Email]: <FaEnvelope size={24} />,
 };
 
-const ContactCard: React.FC<ContactCardProps> = ({ title, contactMethod, username, link }) => {
+const ContactCard: React.FC<ContactCardProps> = ({
+  title,
+  contactMethod,
+  username,
+  link,
+}) => {
   return (
     <a
       href={link}
@@ -24,9 +29,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ title, contactMethod, usernam
       rel="noopener noreferrer"
     >
       <div className="p-6 flex items-center">
-        <div className="flex-shrink-0 mr-4">
-          {contactIcons[contactMethod]}
-        </div>
+        <div className="flex-shrink-0 mr-4">{contactIcons[contactMethod]}</div>
         <div className="flex-1">
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="mt-1 text-gray-300">{username}</p>

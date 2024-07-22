@@ -1,10 +1,17 @@
 import { Navigation } from "../components/nav";
 
-import React from 'react';
+import React from "react";
 import { WorkExperienceCard } from "./_components/work-experience-card";
 import { summary, workExperiences } from "./_lib/contants";
 
-const skills = ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'];
+const skills = [
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Node.js",
+  "Express",
+  "MongoDB",
+];
 
 export default function AboutMe() {
   return (
@@ -14,9 +21,7 @@ export default function AboutMe() {
       <div className="p-4 pt-20 flex flex-col justify-center w-screen">
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Summary</h2>
-          <p className="text-lg text-gray-300">
-              {summary}
-          </p>
+          <p className="text-lg text-gray-300">{summary}</p>
         </section>
 
         <section className="mb-12">
@@ -40,13 +45,15 @@ export default function AboutMe() {
           <h2 className="text-3xl font-bold mb-6">Skills & Tech Stack</h2>
           <div className="flex flex-wrap gap-4 mb-[20px]">
             {skills.map((skill, index) => (
-              <span key={index} className="bg-zinc-600 px-3 py-1 rounded text-sm text-gray-200">
+              <span
+                key={index}
+                className="bg-zinc-600 px-3 py-1 rounded text-sm text-gray-200"
+              >
                 {skill}
               </span>
             ))}
           </div>
         </section>
-
       </div>
     </main>
   );

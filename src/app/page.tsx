@@ -1,11 +1,7 @@
-import { Navigation } from './components/nav';
+import { Navigation } from "./components/nav";
 
 function LandingTitle() {
-  return(
-    <p>
-      Hi, I&apos;m Cameron
-    </p>
-  )
+  return <p>Hi, I&apos;m Cameron</p>;
 }
 
 export default function Home() {
